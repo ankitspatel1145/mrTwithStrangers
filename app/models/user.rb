@@ -1,6 +1,6 @@
 class Api::User < ApplicationRecord
   attr_reader :password
-
+# test
   validates :username, :password_digest, :session_token, presence: true
   validates :username, :email, :phone_number, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
@@ -42,6 +42,6 @@ class Api::User < ApplicationRecord
     while User.find_by(session_token: self.session_token)
       self.session_token = new_session_token
     end
-    self.session_token
+    self.session_token 
   end
 end
