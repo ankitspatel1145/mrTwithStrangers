@@ -7,6 +7,7 @@ import {
   Link,
   HashRouter
 } from 'react-router-dom';
+import Navbar from './navbar';
 
 import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
@@ -14,14 +15,16 @@ import LogInFormContainer from './session_form/login_form_container';
 
 
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import NavBar from './navbar';
 
 const App = () => (
   <div>
     <header>
-      <Link to="/" className="header-link">
-        <h1>Mr. T with Strangers</h1>
-      </Link>
-      <GreetingContainer />
+      <div>
+
+
+        <Navbar/>
+      </div>
     </header>
     <Switch>
       <AuthRoute exact path="/login" component={LogInFormContainer} />
