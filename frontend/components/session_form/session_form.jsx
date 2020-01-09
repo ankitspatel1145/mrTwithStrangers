@@ -4,11 +4,8 @@ class SessionForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: '',
-      first_name: '',
-      last_name: '',
-      email: ''
+      email: '',
+      password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -38,23 +35,54 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    let firstName;
+    let city;
+    if (this.props.formType === "signup"){
+      firstName = (
+      <div>
+        <label>First Name:
+                <input type="text"
+            value={this.state.firstName}
+            onChange={this.update('first_name')}
+            className="login-input"
+            />
+        </label>
+        <br/>
+      </div>
+      )
+      city = (
+        <div>
+        <label>City:
+                <input type="text"
+            value={this.state.city}
+            onChange={this.update('city')}
+            className="login-input"
+            />
+        </label>
+        <br/>
+        </div>
+      )
+    }
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to Mr. T with Strangers!
+          Welcome to Mr T. with Strangers!
           <br />
           Please {this.props.formType} or {this.props.navLink}
           {this.renderErrors()}
           <div className="login-form">
             <br />
-            <label>Username:
+            {firstName}
+            <label>Email:
               <input type="text"
-                value={this.state.username}
-                onChange={this.update('username')}
+                value={this.state.email}
+                onChange={this.update('email')}
                 className="login-input"
               />
             </label>
             <br />
+            {city}
+   
             <label>Password:
               <input type="password"
                 value={this.state.password}

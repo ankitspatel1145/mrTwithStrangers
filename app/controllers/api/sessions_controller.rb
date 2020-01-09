@@ -1,23 +1,23 @@
 class Api::SessionsController < ApplicationController
-
   def create
-    username = params[:user][:username]
-    pw = params[:user][:password]
-    @user = User.find_by_credentails(username, pw)
+    @user = User.find_by_credentails(
+      params[:user][:email],
+      params[:user][:password]
+    )
 
-    if @user 
+    if @user
       login(@user)
-      render "/"
+      render "api/users/show"
     else
-      render json: ['invalid login '], status: 401
+      render json: ["Invalid username/password combination"], status: 401
     end
   end
 
   def destroy
     @user = current_user
     if @user
-
-      render "/"
+      logout
+      render "api/users/show"
     else
       render json: ["Nobody signed in"], status: 404
     end
