@@ -17,3 +17,18 @@
  #login{
    display: none;
  }
+
+ .logo-div {
+   max-width: 300px;
+ }
+ .nav-bar {
+  background-color: aliceblue;
+ }
+
+ .nav-links{
+   background-color: blueviolet;
+ }
+.link-list{
+  list-style-type: none;
+  display: flex;
+}

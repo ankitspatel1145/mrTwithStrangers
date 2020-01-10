@@ -5,11 +5,15 @@ import GreetingContainer from './greeting/greeting_container';
 class NavBar extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Link to="/" className="header-link">
-          <img src="" alt=""/>
-        </Link>
-        <ul>
+      <nav className="nav-bar">
+        <div className="logo-div">
+          <Link to="/" className="header-link">
+            <img src="/assets/logo.png" width="100%" />
+          </Link>
+        </div>
+        <div className="nav-links">
+
+        <ul className="link-list">
           <li>
             Events
           </li>
@@ -19,11 +23,13 @@ class NavBar extends Component {
           <li>
             About
           </li>
-        </ul>
         <GreetingContainer />
+        </ul>
+        </div>
 
-      </React.Fragment>
-    );
+      </nav>
+ 
+ );
   }
 }
 
