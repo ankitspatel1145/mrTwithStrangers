@@ -63,7 +63,7 @@ table {
 }
 /* ############################################# */
 body {
-  font-family: 'Nunito', sans-serif;
+font-family: 'Noto Sans', sans-serif;
 }
 .heading {
   font-weight: 700;
@@ -86,30 +86,41 @@ display: flex;
 height: 100px;
 align-items: center;
 justify-content: space-around;
-overflow: hidden;
+color: white;
 
 }
-
 .link-list-ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  /* background-color: rgb(255, 158, 47); */
+  display: flex;
+  align-items: center;
   overflow: hidden;
-  background-color: rgb(255, 158, 47);
-  position: relative;
-  justify-content: space-between;
-
 }
+
+
 .link-list-ul li{
-  display: block;
-  color: white;
-  text-align: center;
+  /* color: white; */
   padding: 20px 20px;
-  text-decoration: none;
   float: left;
-  
+  border-radius: 5px
 }
 .link-list-ul li:hover {
-  background-color: grey;
+  background-color: white;
+  color:  rgb(255, 158, 47);
+}
 
+.nav-list a{
+  color:inherit;
+  text-decoration: none;
+}
+.nav-list li a:hover{
+  color:inherit;
+  text-decoration: none;
+  
+}
+.signup{
+  border: 2px white solid;
+}
+.nav-bar li {
+  margin: 5px;
 }

@@ -15,17 +15,15 @@ class NavBar extends Component {
         <nav className="nav-list">
           <ul className="link-list-ul">
             <li>
-              Events
+              <a href="">Events</a>
             </li>
             <li>
-              Hosting
+              <a href="">Hosting</a>
             </li>
             <li>
-              About
+              <a href="">About</a>
             </li>
-            <li>
               <GreetingContainer />
-            </li>
           </ul>
         </nav>
      
