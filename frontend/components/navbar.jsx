@@ -8,7 +8,7 @@ class NavBar extends Component {
       <div className='nav-bar'>
         <div className="nav-image">
           <Link to="/" >
-            <img src="/assets/logo.png" width="100%" />
+            <img src={window.logoURL} width="100%" />
           </Link>
         </div>
         
