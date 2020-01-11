@@ -81,12 +81,12 @@ font-family: 'Noto Sans', sans-serif;
   max-height: 100px;
 }
 .nav-bar {
-background-color: #f7bf4d;
-display: flex;
-height: 100px;
-align-items: center;
-justify-content: space-around;
-color: white;
+  background-color: #f7bf4d;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
 
 }
 .link-list-ul{
@@ -102,7 +102,7 @@ color: white;
   /* color: white; */
   padding: 20px 20px;
   float: left;
-  border-radius: 5px
+  border-radius: 6px
 }
 .link-list-ul li:not(:last-child):hover {
   background-color: white;
@@ -151,7 +151,7 @@ color: white;
 }
 
 .login-form{
-  min-width: 650px;
+  max-width: 650px;
  
   padding: 50px;
   display: block;
@@ -163,6 +163,7 @@ color: white;
 }
 .container-form {
   padding: 16px;
+  text-align: center;
 
 }
 .login-form input {
@@ -213,4 +214,9 @@ color: white;
 .errors{
  margin-bottom: 15px;
  color: red;
+}
+.auth-flip{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }

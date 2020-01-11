@@ -104,11 +104,13 @@ class SessionForm extends React.Component {
               {city}
               <button className="session-submit" type="submit" value={this.props.formType}>{submitButtonVal}</button>
               {button}
-              <div className="auth-flip">
-                Please {this.props.formType} or {this.props.navLink}
-              </div>
              </div>
            
+              <div className="auth-flip">
+                <p>
+                   Please {this.props.formType} or  {this.props.navLink}
+                </p>
+              </div>
         </form>
       </div>
     );
