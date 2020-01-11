@@ -44,63 +44,71 @@ class SessionForm extends React.Component {
   render() {
     let firstName;
     let city;
+    let button = <button className="session-submit" onClick={this.handleSubmitDemo}>Login with Demo User</button>
+    let submitButtonVal = "Log In"
+    let header =" Hey stranger!"
+    let text = "It's good to have you back. Sign in here and sign up to hang out with Mr.T !"
     if (this.props.formType === "signup"){
+      submitButtonVal = "Sign Up";
+      header = "Join for Mr. T time"
+      text = "1000s of strangers across the world have sat together for conversations.Create an account and you'll be on your way to join the community."
       firstName = (
-      <div>
-        <label>First Name:
-                <input type="text"
-            value={this.state.firstName}
-            onChange={this.update('first_name')}
-            className="login-input"
-            />
-        </label>
-        <br/>
-      </div>
+        <input type="text"
+          placeholder="First Name"
+          value={this.state.firstName}
+          onChange={this.update('first_name')}
+          className="login-input"
+        />
       )
       city = (
-        <div>
-        <label>City:
-                <input type="text"
-            value={this.state.city}
-            onChange={this.update('city')}
-            className="login-input"
-            />
-        </label>
-        <br/>
-        </div>
+
+        <select name="Cities" className="dropdown">
+          <option value="Pick a city" selected="selected" disabled>Pick a city</option>
+          <option value="New York">New York</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Other">Other</option>
+        </select>
+
       )
+      button = null
     }
     return (
-      <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to Mr T. with Strangers!
-          <br />
-          Please {this.props.formType} or {this.props.navLink}
-          {this.renderErrors()}
-          <div className="login-form">
-            <br />
-            {firstName}
-            <label>Email:
+      <div className="form-container">
+        
+        <form onSubmit={this.handleSubmit} className="login-form">
+            <div className="header-text">
+              <h1>{header}</h1>
+            </div>
+            <div className="text-text">
+              <p>{text}</p>
+            </div >
+            <div className="errors">
+              {this.renderErrors()}
+            </div>
+              
+            <div className="containter-form" >
+              {firstName}
               <input type="text"
+                placeholder="Email"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="login-input"
               />
-            </label>
-            <br />
-            {city}
-   
-            <label>Password:
               <input type="password"
+                placeholder="pasword"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="login-input"
-              />
-            </label>
-            <br />
-            <input className="session-submit" type="submit" value={this.props.formType} />
-            <button className="demo-user" onClick={this.handleSubmitDemo}>Login with Demo User</button>
-          </div>
+                />
+              {city}
+              <button className="session-submit" type="submit" value={this.props.formType}>{submitButtonVal}</button>
+              {button}
+              <div className="auth-flip">
+                Please {this.props.formType} or {this.props.navLink}
+              </div>
+             </div>
+           
         </form>
       </div>
     );

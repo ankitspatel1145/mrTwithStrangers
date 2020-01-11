@@ -126,8 +126,6 @@ color: white;
 .signup{
   border: 2px white solid !important;
   background-color: white;
-  /* box-sizing: border-box; */
-  transition: all .4s ease;
   color: rgb(255, 158, 47)
 }
 .signup:hover{
@@ -138,11 +136,81 @@ color: white;
   transition: all .2s ease;
 }
 .display-name{
-    color:inherit;
+  color:inherit;
   text-decoration: none;
 }
 .display-name:hover{
-    /* color:inherit; */
   text-decoration: none;
   background-color: red !important;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  /* background-color: blueviolet; */
+}
+
+.login-form{
+  min-width: 650px;
+ 
+  padding: 50px;
+  display: block;
+  justify-content: center;
+}
+.inner-form{
+  display: flex;
+  justify-content: center;
+}
+.container-form {
+  padding: 16px;
+
+}
+.login-form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.session-submit{
+  background-color: #ef6236;
+  border-radius: 6px;
+}
+.login-form button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #ef6236;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.header-text{
+  color: #ef6236;
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.text-text{
+  margin-bottom: 15px;
+}
+.dropdown{
+  background-color: white;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.errors{
+ margin-bottom: 15px;
+ color: red;
 }

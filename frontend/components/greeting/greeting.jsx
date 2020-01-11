@@ -7,10 +7,10 @@ const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <ul className="nav-list">
       <li>
-      <Link to="/login">Login</Link>
+        <Link to="/login">Login</Link>
       </li>
       <li className="signup">
-      <Link to="/signup">Sign up!</Link>
+        <Link to="/signup">Sign up!</Link>
       </li>
     </ul>
   );
