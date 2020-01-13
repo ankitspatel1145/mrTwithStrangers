@@ -1,11 +1,13 @@
 class User < ApplicationRecord
   attr_reader :password
-# test
+
   validates :password_digest, :city, :email, :first_name, :session_token, presence: true
   validates :email, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   after_initialize :ensure_session_token
+
+  has_many: :events
   
   def self.find_by_credentails(email, password)
     user = User.find_by(email: email)

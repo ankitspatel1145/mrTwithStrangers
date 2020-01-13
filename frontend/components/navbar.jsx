@@ -15,7 +15,7 @@ class NavBar extends Component {
         <nav className="nav-list">
           <ul className="link-list-ul">
             <li>
-              <a href="">Eventstest</a>
+              <a href="">Events</a>
             </li>
             <li>
               <a href="">Hosting</a>
