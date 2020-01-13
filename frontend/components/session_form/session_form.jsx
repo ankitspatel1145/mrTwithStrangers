@@ -62,7 +62,7 @@ class SessionForm extends React.Component {
       )
       city = (
 
-        <select name="Cities" className="dropdown">
+        <select name="Cities" className="dropdown" onChange={this.update('city')}>
           <option value="Pick a city" selected="selected" disabled>Pick a city</option>
           <option value="New York">New York</option>
           <option value="San Francisco">San Francisco</option>
