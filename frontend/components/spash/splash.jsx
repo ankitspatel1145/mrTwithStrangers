@@ -6,10 +6,13 @@ return (
 <div className="splash-body">
 
   <div className="sec1">
-    <h1>Don't be a fool</h1>
-    <p>Come hang out with a Mr. T today</p>
-    <div>
-      <Link  to="/login"> Come Hang Out!</Link>
+    <img src={window.group2} alt="" />
+    <div className='sec1text'>
+      <h1>Don't be a fool</h1>
+      <p>Come hang out with a Mr. T today</p>
+      <div>
+        <Link  to="/login"> Come Hang Out!</Link>
+      </div>
     </div>
   </div>
 

@@ -231,11 +231,19 @@ font-family: 'Noto Sans', sans-serif;
   justify-content: center;
   flex-direction: column;
 }
-
 .sec1{
   display: flex;
-  background-image: url("group2.jpg");
+  position: relative;
+  font-family: Arial;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 700px;
+}
+.sec1text{
+  display: flex;
 
+  position: absolute;
   background-repeat: no-repeat;
   padding-top: 30px;
   justify-content: center;
@@ -260,6 +268,13 @@ font-family: 'Noto Sans', sans-serif;
 .sec1 p{
   font-size:150%;
 }
+.sec1 img{
+  width: 100%;
+  opacity: 0.5;
+  filter: grayscale(60%);
+  margin: auto;
+}
+
 .sec1 a{
 
   text-align: center;
