@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   after_initialize :ensure_session_token
 
-  has_many: :events
+  has_many :events
   
   def self.find_by_credentails(email, password)
     user = User.find_by(email: email)
