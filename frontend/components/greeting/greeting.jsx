@@ -18,7 +18,7 @@ const Greeting = ({ currentUser, logout }) => {
     <hgroup className="header-group">
 
       <li >
-        <Link onClick={logout}>Log Out</Link>
+        <Link to="/login" onClick={logout}>Log Out</Link>
       </li>
       <li className="name-display">
 

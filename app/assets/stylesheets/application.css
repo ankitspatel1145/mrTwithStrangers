@@ -102,7 +102,7 @@ font-family: 'Noto Sans', sans-serif;
   /* color: white; */
   padding: 20px 20px;
   float: left;
-  border-radius: 6px
+  border-radius: 6px;
 }
 .link-list-ul li:not(:last-child):hover {
   background-color: white;
@@ -119,8 +119,9 @@ font-family: 'Noto Sans', sans-serif;
   transition: all .4s ease;
 }
 .nav-bar li {
+
   margin: 5px;
-  border: 3px #f7bf4d solid
+  /* border: 3px red solid */
 }
 
 .signup{
@@ -169,15 +170,29 @@ font-family: 'Noto Sans', sans-serif;
 .login-form input {
   width: 100%;
   padding: 12px 20px;
+  height: 60px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 6px;
 }
+
+.login-form input
+{
+  font-size:18px;
+
+}
+.dropdown
+{
+  font-size:18px;
+  color: #808080;
+
+}
 .session-submit{
   background-color: #ef6236;
   border-radius: 6px;
+  height: 60px;
   
 }
 .session-submit:hover{
@@ -206,6 +221,10 @@ font-family: 'Noto Sans', sans-serif;
 .text-text{
   margin-bottom: 15px;
 }
+.text-text p{
+  line-height: 200%;
+  font-weight: 500;
+}
 .dropdown{
   background-color: white;
   width: 100%;
@@ -215,6 +234,7 @@ font-family: 'Noto Sans', sans-serif;
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 6px;
+  height: 60px;
 }
 .errors{
  margin-bottom: 15px;

@@ -62,8 +62,8 @@ class SessionForm extends React.Component {
       )
       city = (
 
-        <select name="Cities" className="dropdown" onChange={this.update('city')}>
-          <option value="Pick a city" selected="selected" disabled>Pick a city</option>
+        <select  defaultValue="" name="Cities" className="dropdown" onChange={this.update('city')}>
+          <option value=""   disabled>Pick a city</option>
           <option value="New York">New York</option>
           <option value="San Francisco">San Francisco</option>
           <option value="Los Angeles">Los Angeles</option>
@@ -96,7 +96,7 @@ class SessionForm extends React.Component {
                 className="login-input"
               />
               <input type="password"
-                placeholder="pasword"
+                placeholder="Password (at least 6 characters) "
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="login-input"

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_01_13_185323) do
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
-    t.integer <img src={window.logoURL} width="100%"  null: false
+    t.integer "host_id",  null: false
     t.date "date", null: false
     t.string "city", null: false
     t.string "state", null: false

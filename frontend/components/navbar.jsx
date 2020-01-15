@@ -17,6 +17,7 @@ class NavBar extends Component {
             <li>
               <a href="">Events</a>
             </li>
+    
             <li>
               <a href="">Hosting</a>
             </li>
