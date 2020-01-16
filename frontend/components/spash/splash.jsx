@@ -68,7 +68,10 @@ return (
     </div>
   </div>
   <div className="sec5">
-
+      <div>
+        <h1>Be Cool</h1>
+        <Link to="/login"> Come Hang Out!</Link>
+      </div>
   </div>
 </div>
 )

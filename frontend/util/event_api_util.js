@@ -1,11 +1,11 @@
-export const fetchAllEvents = () => (
+export const getAllEvents = () => (
   $.ajax({
     method: 'get',
     url: 'api/events'
   })
 )
 
-export const fetchSingleEvent = (id) => (
+export const getEvent = (id) => (
   $.ajax({
     method: 'get',
     url: `api/events/${id}`

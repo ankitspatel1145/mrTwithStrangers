@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
 
-// import benches from './benches_reducer';
-// import reviews from './reviews_reducer';
 import users from './users_reducer';
+import eventsReducer from './events_reducer';
+
+
 
 export default combineReducers({
   // benches,
-  // reviews,
+  events: eventsReducer,
   users,
 });
