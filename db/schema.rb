@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_221118) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name", null: falsehttps://sfbay.craigslist.org/sfc/roo/d/brisbane-nice-rooms-for-students-1000/7057224622.html#
+    t.string "first_name", null: false
     t.string "email", null: false
     t.boolean "can_host", default: false, null: false
     t.string "session_token", null: false
