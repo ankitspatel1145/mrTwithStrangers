@@ -23,8 +23,26 @@ Things you may want to cover:
 
 * Jquery-rails
 
+## Features in development:
 
-* Configuration
+* Hosts should have ability to delete their event
+* Events should fill up and show correct number of people attending
+* Google maps api to show all events on map
+* Users should be able to filter events by city
+
+## Want to contribute? Great!
+
+To fix a bug or enhance an existing module, follow these steps:
+
+Fork the repo
+Create a new branch (git checkout -b improve-feature)
+Make the appropriate changes in the files
+Add changes to reflect the changes made
+Commit your changes (git commit -am 'Improve feature')
+Push to the branch (git push origin improve-feature)
+Create a Pull Request
+
+
 
 * Database creation
 
