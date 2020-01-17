@@ -23,6 +23,8 @@ Things you may want to cover:
 
 * Jquery-rails
 
+* PostgreSQL
+
 ## Features in development:
 
 * Hosts should have ability to delete their event
@@ -30,17 +32,26 @@ Things you may want to cover:
 * Google maps api to show all events on map
 * Users should be able to filter events by city
 
-## Want to contribute? Great!
+## To Contribute:
 
 To fix a bug or enhance an existing module, follow these steps:
 
 Fork the repo
-Create a new branch (git checkout -b improve-feature)
-Make the appropriate changes in the files
-Add changes to reflect the changes made
-Commit your changes (git commit -am 'Improve feature')
-Push to the branch (git push origin improve-feature)
-Create a Pull Request
+* Create a new branch (`git checkout -b improve-feature`)
+* Make the appropriate changes in the files
+* Add changes to reflect the changes made
+* Commit your changes (`git commit -am 'Improve feature'`)
+* Push to the branch (`git push origin improve-feature`)
+* Create a Pull Request
+
+## Local install instructions:
+* Make sure to have PostgresQL running
+* Open new terminal in the project directory and run the following in sequence:
+  * `bundle install`
+  * `npm install`
+  * `rails db:setup`
+* Run `npm start` and keep this terminal open (in the project directory)
+* Run `rails s` in a new terminal and keep it open as well (in the project directory)
 
 
 
