@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_16_182142) do
+ActiveRecord::Schema.define(version: 2020_01_16_221118) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_182142) do
     t.string "city", null: false
     t.string "state", null: false
     t.string "address", null: false
-    t.time "time", null: false
+    t.string "time", null: false
     t.integer "spots", null: false
     t.string "description", null: false
     t.datetime "created_at", null: false
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_182142) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name", null: false
+    t.string "first_name", null: falsehttps://sfbay.craigslist.org/sfc/roo/d/brisbane-nice-rooms-for-students-1000/7057224622.html#
     t.string "email", null: false
     t.boolean "can_host", default: false, null: false
     t.string "session_token", null: false

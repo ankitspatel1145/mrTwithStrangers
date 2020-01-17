@@ -19,3 +19,17 @@ export const createEvent = (event) => (
     data: {event}
   })
 )
+
+export const updateEvent = (event) => (
+  $.ajax({
+    url:`/api/events/${event.id}`,
+    method: 'patch',
+    data: {event: event}
+  })
+)
+export const deleteEvent = (id) => (
+  $.ajax({
+    url:`api/events/${id}`,
+    method: 'delete'
+  })
+)

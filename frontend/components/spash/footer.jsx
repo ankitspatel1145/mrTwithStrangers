@@ -18,13 +18,26 @@ class FooterEle extends React.Component{
             <li>
               <Link to='/about'>About</Link>
             </li>
-            
+            <li>
+              <a href="https://www.linkedin.com/in/ankit-patel-aa5216133/" target="_blank"> LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/ankitspatel1145/" target="_blank">GitHub</a>
+            </li>
           </ul>
         </nav>
         <div className="footer-text">
-          <p>this is a ptakjahfd asjfasljfd;a lshdf; ljasl;dfja;sdjfl; ajs;ldfjkfh a;shf
-            akdfh;a sd'fljal sdjfg
-          </p>
+          <p>This project is obviously a joke, and in no way affiliated with the real Mr. T</p>
+          <p>If you like what you see, or apriciate my sense of humor, check out my github and LinkedIn profiles on the left over there.</p>
+          <p>Or click the logos on the right. You do you.</p>
+        </div>
+        <div className='linkimg'>
+          <a href="https://github.com/ankitspatel1145/" target="_blank">
+            <img src={window.git} width="100%" />
+          </a>
+          <a href="https://www.linkedin.com/in/ankit-patel-aa5216133/" target="_blank"> 
+            <img src={window.link} width="100%" />
+          </a>
         </div>
 
       </div>

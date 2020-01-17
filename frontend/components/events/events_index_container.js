@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import {getAllEvents} from '../../actions/event_actions';
+import {getAllEvents, deleteEvent} from '../../actions/event_actions';
 import EventsIndex from './events_index';
 
 const mapSTP = state => ({
@@ -9,7 +9,7 @@ const mapSTP = state => ({
 const mapDTP = dispatchEvent => {
   // debugger
   return ({
-  
+    // deleteEvent: () => dispatchEvent(deleteEvent(eventId)),
     getAllEvents: () => dispatchEvent(getAllEvents())
   })
 }

@@ -11,7 +11,6 @@ class EventsIndex extends React.Component{
 
   componentDidMount(){
     this.props.getAllEvents();
-
   }
 
   render() {
@@ -22,28 +21,55 @@ class EventsIndex extends React.Component{
     let sf = events.filter(event => event.city === "San Francisco")
     return(
       
-      <div>
+      <div className='eventsindex'>
 
-        <div className='sfevents'>
-          <h1>Events in San Francisco</h1>
-          <ul>
-            {sf.map(event => <EventIndexItem key={event.id} event={event} />)}
-
-          </ul>
+        <div className='city'>
+          <div className='cityname'>
+            <h1>Events in San Francisco:</h1>
+          </div>
+          <div>
+            <ul className="eventslist">
+              {sf.map(event => 
+                <EventIndexItem 
+                  key={event.id} 
+                  event={event} 
+                  // deleteEvent={deleteEvent} 
+                  />)
+                }
+                </ul>
+          </div>
         </div>
-        <div className='laevents'>
-          <h1>Events in Los Angeles</h1>
-          <ul>
-            {la.map(event => <EventIndexItem key={event.id} event={event} />)}
-
-          </ul>
+        <div className='city'>
+          <div className='cityname'>
+            <h1>Events in Los Angeles:</h1>
+          </div>
+          <div>
+            <ul className="eventslist">
+              {la.map(event => 
+                <EventIndexItem 
+                  key={event.id} 
+                  event={event} 
+                  // deleteEvent={deleteEvent} 
+                  />)
+                }
+                </ul>
+          </div>
         </div>
-        <div className='nyevents'>
-          <h1>Events in New York</h1>
-          <ul>
-            {ny.map(event => <EventIndexItem key={event.id} event={event} /> )}
-          
-          </ul>
+        <div className='city'>
+          <div className='cityname'>
+            <h1>Events in New York:</h1>
+          </div>
+          <div>
+            <ul className="eventslist">
+              {ny.map(event => 
+                <EventIndexItem 
+                  key={event.id} 
+                  event={event} 
+                  // deleteEvent={deleteEvent} 
+                  />)
+                }
+                </ul>
+          </div>
         </div>
       </div>
     );
