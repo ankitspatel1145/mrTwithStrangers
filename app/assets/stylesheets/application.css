@@ -44,7 +44,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  background-color: #FAF6E8;
+  min-width: 765px;
 }
 ol, ul {
 	list-style: none;
@@ -76,14 +78,12 @@ font-family: 'Noto Sans', sans-serif;
 }
 
 .nav-image {
-  max-width: 250px;
-  overflow: hidden;
-  max-height: 100px;
+  max-width: 15%;
 }
 .nav-bar {
   background-color: #f7bf4d;
   display: flex;
-  height: 100px;
+  height: 10vh;
   align-items: center;
   justify-content: space-around;
   color: white;
@@ -91,15 +91,12 @@ font-family: 'Noto Sans', sans-serif;
 }
 .link-list-ul{
   list-style-type: none;
-  /* background-color: rgb(255, 158, 47); */
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
-
 .link-list-ul li{
-  /* color: white; */
   padding: 20px 20px;
   float: left;
   border-radius: 6px;
@@ -122,6 +119,9 @@ font-family: 'Noto Sans', sans-serif;
 
   margin: 5px;
   /* border: 3px red solid */
+}
+main{
+  height: 100vh;
 }
 
 .signup{
@@ -148,8 +148,8 @@ font-family: 'Noto Sans', sans-serif;
 .form-container{
   display: flex;
   justify-content: center;
-  /* background-color: blueviolet; */
-  min-height: 600px;
+  align-items: center;
+  min-height: 70vh;
 }
 
 .login-form{
@@ -259,7 +259,7 @@ font-family: 'Noto Sans', sans-serif;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-height: 700px;
+  max-height: 75vh;
 }
 .sec1text{
   display: flex;
@@ -311,6 +311,9 @@ font-family: 'Noto Sans', sans-serif;
   color: white;
   font-weight: bold;
   font-size: 16px;
+}
+.sec1 a:hover{
+  background-color: #f7bf4d;
 }
 .sec2{
   color: black;
@@ -388,7 +391,7 @@ font-family: 'Noto Sans', sans-serif;
 
 .footer {
   background-color: #f7bf4d;
-  min-height: 200px;
+  min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,30 +438,35 @@ font-family: 'Noto Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
 }
+.sec5 a:hover{
+  /* color: red; */
+  background-color: #f7bf4d;
+}
+
 .hosting {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  min-height: 70vh;
 }
 .hosting h1{
   color: #ef6236;
   font-size: 38px;
   font-weight: 700;
-  padding: 20px;
-  margin-top: 30px;
+  /* padding: 20px; */
+  margin-bottom: 3%;
 }
 .hosting p{
   font-size: 24px;
-  padding: 10px;
+  padding: 1%;
 }
 .hosting img {
   width: auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   border: #ef6236 5px solid;
   border-radius: 10px;
-  margin: 100px;
+  /* margin: 100px; */
 }
 .eventsindex {
   display: flex;

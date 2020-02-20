@@ -25,7 +25,7 @@ import event_show_container from './events/event_show_container';
 
 
 const App = () => (
-  <div>
+  <div className='test'>
     <header>
       <div>
         <Navbar/>
