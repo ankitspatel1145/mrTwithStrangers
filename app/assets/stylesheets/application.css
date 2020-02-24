@@ -481,7 +481,8 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 30px;
+  /* margin: 30px; */
+  width: 60%;
   
 }
 .cityname{
@@ -506,6 +507,7 @@ main{
 .eventslist{
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
   /* flex-direction: column; */
 }
 

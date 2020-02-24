@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import Root from './components/root'
 import configureStore from './store/store';
-
+import * as EventUtil from './util/event_api_util'
 document.addEventListener('DOMContentLoaded', () => {
 
   const root = document.getElementById('root');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-
+  window.EventUtil = EventUtil
   window.store = store
   window.dispatch = store.dispatch
   window.getState = store.getState
