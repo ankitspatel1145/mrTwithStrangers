@@ -7,13 +7,19 @@ class EventsIndex extends React.Component{
   constructor(props) {
     super(props)
     this.state = {}
+    // this.testq = this.testq.bind(this)
   }
 
   componentDidMount(){
     this.props.getAllEvents();
   }
 
+  // testq(){
+  //   console.log("test")
+  // }
+
   render() {
+    let test = document.getElementById('cit')
     let now = new Date()    
     console.log(now)
     let events = this.props.events
@@ -39,6 +45,13 @@ class EventsIndex extends React.Component{
     return(
       
       <div className='eventsindex'>
+
+        <div className='citybtn'>
+          {/* <input type="button" onClick="document.getElementById('test').scrollIntoView();" /> */}
+          {/* <button onclick=" document.getElementById(`test`).scrollIntoView();">Scroll</button> */}
+          <button onClick={() => (test.scrollIntoView())} >test</button>
+
+        </div>
 
         <div className='city'>
           <div className='cityname'>
@@ -72,7 +85,7 @@ class EventsIndex extends React.Component{
                 </ul>
           </div>
         </div>
-        <div className='city'>
+        <div id="cit" className='city'>
           <div className='cityname'>
             <h1>Events in New York:</h1>
           </div>
@@ -88,6 +101,9 @@ class EventsIndex extends React.Component{
                 </ul>
           </div>
         </div>
+          <div id="test">
+          <h1 >hw</h1>
+          </div>
       </div>
     );
   }
