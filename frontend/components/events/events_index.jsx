@@ -14,14 +14,27 @@ class EventsIndex extends React.Component{
   }
 
   render() {
-    let current_datetime = new Date()
-    let formatted_date = current_datetime.getDate() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getFullYear()
-    console.log(formatted_date)
-    console.log('test')
+    let now = new Date()    
+    console.log(now)
     let events = this.props.events
-    let la = events.filter(event => event.city === "Los Angeles")
-    let ny = events.filter(event => event.city === "New York")
-    let sf = events.filter(event => event.city === "San Francisco")
+    let la = events.filter(event => {
+      let eventDate = new Date(event.date)
+      if ((event.city === "Los Angeles") && (eventDate > now)){
+        return event
+      }
+    }) 
+    let ny = events.filter(event => {
+      let eventDate = new Date(event.date)
+      if ((event.city === "New York") && (eventDate > now)) {
+        return event
+      }
+    }) 
+    let sf = events.filter(event => {
+      let eventDate = new Date(event.date)
+      if ((event.city === "San Francisco") && (eventDate > now)) {
+        return event
+      }
+    }) 
     // debugger
     return(
       
