@@ -42,12 +42,15 @@ class EventsIndex extends React.Component{
     return(
       
       <div className='eventsindex'>
+        <div className="select">
 
-        <div className='citybtn'>
-          <button onClick={() => (NY.scrollIntoView())} >New York</button>
-          <button onClick={() => (SF.scrollIntoView())} >San Francisco</button>
-          <button onClick={() => (LA.scrollIntoView())} >Los Angeles</button>
+          <p >Jump to your city's Mr. T events</p>
+          <div className='citybtn'>
+            <button onClick={() => (NY.scrollIntoView())} >New York</button>
+            <button onClick={() => (SF.scrollIntoView())} >San Francisco</button>
+            <button onClick={() => (LA.scrollIntoView())} >Los Angeles</button>
 
+          </div>
         </div>
 
         <div id="SF" className='city'>
