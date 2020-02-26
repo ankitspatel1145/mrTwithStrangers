@@ -5,7 +5,6 @@ class Api::EventsController < ApplicationController
     before_action :set_event, only: [:show, :update, :destroy]
     def index
         @events = Event.all
-        # render 'api/events/index'
     end
 
     def show
@@ -14,7 +13,6 @@ class Api::EventsController < ApplicationController
 
     def create
         @event = Event.new(event_params)
-        # debugger
         @event.host_id = 3
         # @event.host_id = current_user.id
         if @event.save!
@@ -45,6 +43,7 @@ class Api::EventsController < ApplicationController
     rescue
         render json: ['Event not found'], status: :not_found
     end
+    
     def event_params
         params.require(:event).permit(
             :host_id,
