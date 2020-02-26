@@ -5,6 +5,8 @@ import {createEvent} from '../../actions/event_actions';
 
 const mstp = (state) => ({
 
+  currentUser: state.session.id,
+  canHost: state.session.canHost.toString()
 });
 
 const mdtp = dispatchEvent => ({

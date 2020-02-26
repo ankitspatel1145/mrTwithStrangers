@@ -21,6 +21,7 @@ import about from './spash/about';
 import FooterEle from './spash/footer';
 import events_index_container from './events/events_index_container';
 import event_show_container from './events/event_show_container';
+import EventFormContainter from './eventform/event_form_containter'
 
 
 
@@ -38,6 +39,7 @@ const App = () => (
       <Route exact path="/" component={Splash} />
       <Route path="/hosting" component={hosting} />
       <Route path="/about" component={about} />
+      <Route exact path="/events/new" component={EventFormContainter} />
       <Route exact path="/events" component={events_index_container} />
       <Route exact path="/events/:eventId" component={event_show_container} />
 
