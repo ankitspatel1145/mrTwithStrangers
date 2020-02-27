@@ -28,15 +28,15 @@ class EventForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    // let formdata = new FormData()
     let event = this.state
     this.props.createEvent(event)
-    // this.props.history.push('/events')
+      .then(thing => this.props.history.push('/events'))
+      // .then(action => this.props.history.push(`/projects/${action.project.id}`))
   }
 
   render() {
     var dateObj = new Date();
-    var month = dateObj.getUTCMonth() + 1; //months from 1-12
+    var month = dateObj.getUTCMonth() + 1; 
     var day = dateObj.getUTCDate();
     var year = dateObj.getUTCFullYear();
     if (month < 10){
@@ -46,10 +46,8 @@ class EventForm extends React.Component {
       day = "0" + day
     }
 
-
     let today = year + "-" + month + "-" + day;
-    console.log(this.props)
-    console.log(today)
+    // console.log(this.props)
     return (
       <div className="form-container">
 
@@ -70,7 +68,27 @@ class EventForm extends React.Component {
               onChange={this.update('date')}
               className="login-input"
             />
+
+            <input type="time"
+              value={this.state.time}
+              onChange={this.update("time")}
+            />
    
+            <select defaultValue="" name="Cities" className="dropdown" onChange={this.update('city')}>
+              <option value="" disabled>Pick a city</option>
+              <option value="New York">New York</option>
+              <option value="San Francisco">San Francisco</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <select defaultValue="" name="state" className="dropdown" onChange={this.update('state')}>
+              <option value="" disabled>Pick a State</option>
+              <option value="CA">CA</option>
+              <option value="NY">NY</option>
+              <option value="Other">Other</option>
+            </select>
+
             <input type="address"
               placeholder="Address"
               value={this.state.address}

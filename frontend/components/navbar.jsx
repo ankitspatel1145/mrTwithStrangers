@@ -15,13 +15,13 @@ class NavBar extends Component {
         <nav className="nav-list">
           <ul className="link-list-ul">
             <li>
-              <Link to='/events'>Events</Link>
+              <Link className="navlinks" to='/events'>Events</Link>
             </li>
             <li>
-              <Link to='/hosting'>Hosting</Link>
+              <Link className="navlinks" to='/hosting'>Hosting</Link>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <Link className="navlinks" to='/about'>About</Link>
             </li>
               <GreetingContainer />
           </ul>

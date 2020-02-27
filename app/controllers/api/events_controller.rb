@@ -1,7 +1,7 @@
 class Api::EventsController < ApplicationController
-    skip_before_action :verify_authenticity_token
+    # skip_before_action :verify_authenticity_token
 
-    # before_action :require_logged_in, only: [:create]
+    before_action :require_logged_in, only: [:create]
     before_action :set_event, only: [:show, :update, :destroy]
     def index
         @events = Event.all
@@ -16,7 +16,8 @@ class Api::EventsController < ApplicationController
         @event.host_id = 3
         # @event.host_id = current_user.id
         if @event.save!
-            render "api/users/show"
+            render "api/events"
+            # render json: @event, status:200
         else
             render json: @event.errors.full_messages, status: 422
         end
