@@ -476,7 +476,7 @@ main{
   align-items: center;
 }
 .select{
-  margin-top: 3%;
+  margin: 3%;
   padding: 1%;
   width: 70%;
   display: flex;
@@ -662,4 +662,22 @@ main{
 .linkimg img {
   max-width: 50px;
   padding: 30px
+}
+.newbtn{
+    width: 50%;
+  padding: 12px 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #ef6236;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+.newbtn:hover{
+  background-color: #f7bf4d;
+  cursor: pointer;
+  color:  #ef6236;
 }

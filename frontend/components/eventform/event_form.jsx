@@ -45,9 +45,11 @@ class EventForm extends React.Component {
     if (day < 10) {
       day = "0" + day
     }
-
     let today = year + "-" + month + "-" + day;
-    // console.log(this.props)
+    console.log("props",this.props)
+    if (!this.props.canHost) {
+      this.props.history.push('/hosting')
+    }
     return (
       <div className="form-container">
 

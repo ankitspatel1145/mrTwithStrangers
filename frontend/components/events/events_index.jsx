@@ -101,6 +101,10 @@ class EventsIndex extends React.Component{
                 </ul>
           </div>
         </div>
+        <div className='select'>
+          <p>Create a new event today!</p>
+          <button className="newbtn" onClick={()=> this.props.history.push('/events/new')}>New Event!</button>
+        </div>
           
       </div>
     );

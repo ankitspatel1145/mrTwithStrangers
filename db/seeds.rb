@@ -5,7 +5,7 @@
 # user1 = User.create(email: "demo@twithstrangers.com", password:"password", first_name:"Demo User", city:"New York")
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.firrt)
-User.create(email: "demo@twithstrangers.com", password: "password", first_name: "Demo User", city: "New York")
+User.create(email: "demo@twithstrangers.com", password: "password", first_name: "Demo User", city: "New York",can_host: true)
 User.create(email: "test@twithstrangers.com", password: "password", first_name: "kevin", city: "San Francisco")
 User.create(email: "test2@twithstrangers.com", password: "password", first_name: "Mr. T", city: "Los Angeles")
 User.create(email: "test3@twithstrangers.com", password: "password", first_name: "Mrs. T", city: "New York")
