@@ -21,6 +21,12 @@ export const removeEvent = eventId => ({
   type: REMOVE_EVENT,
   eventId: eventId
 })
+
+export const addUserToEvent = (id) => dispatchEvent => (
+  EventApiUtil.getEvent(id)
+    .then(event => dispatchEvent(receiveEvent(event)))
+)
+
 export const getAllEvents = () => dispatchEvent => (
   EventApiUtil.getAllEvents()
     .then(events => dispatchEvent(receiveAllEvents(events)))

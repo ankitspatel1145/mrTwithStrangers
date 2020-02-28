@@ -7,5 +7,9 @@ class Event < ApplicationRecord
         foreign_key: :user_id,
         optional: true
 
+    has_many :atendees,
+        class_name: :AtendeesJoin,
+        foreign_key: :event_id
+
 
 end

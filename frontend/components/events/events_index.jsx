@@ -64,6 +64,7 @@ class EventsIndex extends React.Component{
                   key={event.id} 
                   event={event} 
                   // deleteEvent={deleteEvent} 
+                  currentUser={this.props.currentUser}
                   />)
                 }
                 </ul>
@@ -80,6 +81,7 @@ class EventsIndex extends React.Component{
                   key={event.id} 
                   event={event} 
                   // deleteEvent={deleteEvent} 
+                  currentUser={this.props.currentUser}
                   />)
                 }
                 </ul>
@@ -96,6 +98,7 @@ class EventsIndex extends React.Component{
                   key={event.id} 
                   event={event} 
                   // deleteEvent={deleteEvent} 
+                  currentUser={this.props.currentUser}
                   />)
                 }
                 </ul>

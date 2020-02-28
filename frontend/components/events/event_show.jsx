@@ -2,12 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class EventShow extends React.Component{
+
+
   componentDidMount(){
 
     this.props.getEvent(this.props.match.params.eventId);
   }
 
   render() {
+
+
 
     if (!this.props.event) {
       return null
