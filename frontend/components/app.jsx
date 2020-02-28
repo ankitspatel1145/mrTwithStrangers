@@ -41,8 +41,8 @@ const App = () => (
       <Route path="/about" component={about} />
   
       <ProtectedRoute exact path="/events/new" component={EventFormContainter} />
-      <Route exact path="/events" component={events_index_container} />
-      <Route exact path="/events/:eventId" component={event_show_container} />
+      <ProtectedRoute exact path="/events" component={events_index_container} />
+      <ProtectedRoute exact path="/events/:eventId" component={event_show_container} />
 
     </Switch>
     <footer>

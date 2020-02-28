@@ -14,7 +14,11 @@ class EventIndexItem extends React.Component{
   addUser(e) {
     e.preventDefault()
     this.setState(()=> this.state.event.atendees.push(this.props.currentUser))
-    console.log(this.state) 
+    let id = this.props.event.id
+    
+    console.log(id) 
+    let button = document.getElementById(id)
+    alert("Event Added")
   }
 
 
@@ -33,7 +37,7 @@ class EventIndexItem extends React.Component{
             <p>{event.spots}</p>
           </div>
         </Link>
-        <button onClick={this.addUser} >Join Event</button>
+        <button id={this.props.event.id} onClick={this.addUser} >Join Event</button>
       </div>
     )
   }

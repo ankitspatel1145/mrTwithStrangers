@@ -584,6 +584,11 @@ main{
   font-size: 16px;
 
 }
+.eventitems-p button:hover{
+  color: #ef6236;
+    background-color: #f7bf4d;
+    cursor: pointer;
+}
 .event-time {
 
 
