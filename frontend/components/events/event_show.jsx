@@ -28,7 +28,7 @@ class EventShow extends React.Component{
               <li>{event.date}</li>
               <li>{event.time}</li>
               <li>{event.address}</li>
-              <li>{event.city}</li>
+              {/* <li>{event.city}</li> */}
               <li>{event.description}</li>
             </ul>
           </div>

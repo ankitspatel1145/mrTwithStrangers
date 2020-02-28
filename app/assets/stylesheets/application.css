@@ -618,11 +618,13 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #ef613679;;
 }
 .mainh{
   margin: 30px;
   font-size: 30px;
   color: #ef6236;
+  text-align: center;
 }
 .sectit {
   font-size: 24px;
