@@ -9,8 +9,6 @@ If users would like to host events, the need to be aproved my Mr.T. Once approve
 
 ## Technical Specs
 
-Things you may want to cover:
-
 * Ruby 2.5.1
 
 * Rails 5.2.4
