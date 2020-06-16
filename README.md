@@ -5,7 +5,7 @@
 Mr.T with Strangers is a project developed by an aspiring software dev that hopes to put everybody in touch with Mr. T.
 The site displays a list of events that Mr.T or someone like Mr.T will be hosting in major cities. Users can browse by city or use the map to see event locations. 
 
-If users would like to host events, the need to be aproved my Mr.T. Once approved to host events, users will be able to create new event listings in the location of their choosing. 
+If users would like to host events, they need to be aproved my Mr.T. Once approved to host events, users will be able to create new event listings in the location of their choosing. 
 
 ## Technical Specs
 
